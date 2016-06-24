@@ -1,0 +1,8 @@
+machine:
+    php:
+        version: 7.0.4
+database:
+    override:
+        - php bin/console doctrine:database:create
+        - php bin/console doctrine:schema:create
+        - php bi/console doctrine:schema:update --force
